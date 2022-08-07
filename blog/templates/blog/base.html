@@ -41,6 +41,7 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'blog-home' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'blog-about' %}">About</a></li>
                         {% if user.is_authenticated %}
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={% url 'post-create' %}>Create new post</a></li>
                             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={% url 'profile' %}>Profile</a></li>
                             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={% url 'logout' %}>Logout</a></li>
                         {% else %}
