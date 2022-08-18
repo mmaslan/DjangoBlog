@@ -6,4 +6,5 @@ creating post and possibility to update posts - but only by the post author. Vis
  - Navigate to the project folder and run **pip3 install -r requirements.txt**
  - Start application by running: **$ python manage.py runserver**
  - Website should be accessible at 127.0.0.1:8000
+ - To create the SQL commands to reflect the changes to any tables within models.py, you create a "migration" file, which is stored in ~/migrations/, by running: **$ python manage.py makemigrations**
  - to apply the SQL located within migration files and alter the database, run: **$ python.manage.py migrate**
