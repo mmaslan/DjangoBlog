@@ -21,3 +21,6 @@ class URLTest(TestCase):
     def test_about(self):
         response = self.client.get('/about.html')
         self.assertTrue(response)
+
+
+
